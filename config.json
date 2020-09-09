@@ -1,0 +1,37 @@
+{
+  "version": "3",
+  "configs": {
+    "product-name": "OpenRevise",
+    "product-src-url": "https://github.com/OopDevs/OpenRevise3",
+    "notes-path": "https://oopdevs.github.io/OpenReviseNotes/notes/index.json"
+  },
+  "meta": {
+    "libraries": {
+      "bulma": {
+        "friendly-name": "Bulma",
+        "path": "assets/css/lib/bulma/*",
+        "version": "0.9.0"
+      },
+      "fontawesome": {
+        "friendly-name": "FontAwesome",
+        "path": "assets/icons/lib/fontawesome/*",
+        "version": "5.14.0"
+      },
+      "jquery": {
+        "friendly-name": "jQuery",
+        "path": "assets/js/lib/jquery/jquery-3.5.1.min.js",
+        "version": "3.5.1"
+      },
+      "jquery.localize": {
+        "friendly-name": "jQuery.Localize",
+        "path": "assets/js/lib/jquery/jquery.localize.min.js",
+        "version": "0.2.0"
+      },
+      "localforage": {
+        "friendly-name": "localForage",
+        "path": "assets/js/lib/localforage/localforage.min.js",
+        "version": "1.9.0"
+      }
+    }
+  }
+}
