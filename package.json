@@ -2,7 +2,7 @@
   "name": "openrevise3",
   "version": "3.0.0",
   "description": "An open-source study platform made by students, for students.",
-  "main": "./desktop/openrevise-desktop.js",
+  "main": "openrevise-desktop.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/OopDevs/OpenRevise3/issues"
   },
-  "homepage": "https://github.com/OopDevs/OpenRevise3#readme"
+  "homepage": "https://github.com/OopDevs/OpenRevise3#readme",
+  "dependencies": {
+    "electron": "^10.1.2"
+  }
 }

@@ -1,9 +1,8 @@
 const { app, BrowserWindow } = require('electron')
 
 function createWindow () {
-  console.log('\n\nIcon dir:\n' + __dirname + '/app/pages/master/openrevise-logo.png\n\n')
   var win = new BrowserWindow({
-    icon: __dirname + 'app/pages/master/openrevise-logo.png',
+    icon: __dirname + 'app/assets/icons/openrevise-logo.png',
     width: 900,
     height: 700,
     show: false,
@@ -13,14 +12,14 @@ function createWindow () {
   })
 
   if (process.platform !== 'darwin') {
-    //win.removeMenu()
+    // win.removeMenu()
   }
 
   win.once('ready-to-show', () => {
     win.show()
   })
 
-  win.loadFile('app/pages/master.html')
+  win.loadFile('app/index.html')
 }
 
 app.whenReady().then(createWindow)
