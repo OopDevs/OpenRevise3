@@ -1,3 +1,18 @@
-.openrevise-logo-light{
-  filter: invert(1);
+:root {
+  --white: #ffffff;
+  --blue: #15689e;
+  --light-blue: #02a8b1;
+  --dark-blue: #068488;
+  --black: #0d1414;
+  --gray: #aab4bd;
+  --red: #ed145b;
+  --purple: #9a5ec2;
+  --green: #5cc477;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }

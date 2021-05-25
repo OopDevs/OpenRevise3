@@ -1,0 +1,388 @@
+/* NavBar  */
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  height: 80px;
+  z-index: 999;
+  top: 0;
+  font-size: 20px;
+}
+.nav-colored {
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  height: 80px;
+  z-index: 999;
+  top: 0;
+  font-size: 20px;
+}
+.navabar-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+  height: 80px;
+  z-index: 999;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+.logo {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  padding-bottom: 10px;
+}
+.colored-logo {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  padding-bottom: 10px;
+}
+.logo:hover {
+  color: black;
+}
+.navbar-toogle {
+  display: none;
+}
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+}
+.navbar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7px;
+}
+.colored-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: var(--black);
+}
+.colored-item a {
+  text-decoration: none;
+  color: var(--white);
+}
+.colored-item button #signIn {
+  color: var(--black);
+}
+.navbar-item a :hover {
+  color: var(--blue);
+}
+.navbar-item .btn-info a {
+  padding-top: 5px;
+}
+#singIn-btn {
+  background-color: var(--white);
+  border-color: var(--black);
+}
+#register-btn {
+  color: var(--white);
+  background-color: var(--light-blue);
+}
+@media screen and (max-width: 960px) {
+  .navabar-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    padding: 0;
+  }
+  .navbar-menu {
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    transition: all 0.3s ease;
+    height: 50vh;
+    position: absolute;
+    top: -1000px;
+    z-index: -1;
+    opacity: 1;
+  }
+  .navbar-menu.active {
+    top: 100%;
+    opacity: 1;
+    transition: all 0.3 ease;
+    height: 50vh;
+    font-size: 1.6rem;
+  }
+  .navbar-toogle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    transform: translate(5%, 20%);
+    cursor: pointer;
+  }
+  .navbar-item a {
+    color: white;
+  }
+  .logo {
+    margin-left: 25px;
+    align-items: center;
+    padding-top: 20px;
+    font-weight: 700;
+  }
+}
+/* Hero Section Css */
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  width: 100%;
+  height: 85vh;
+  margin: 0 auto;
+  padding: 0 10px;
+  z-index: 1;
+}
+.main-content {
+  padding-left: 10px;
+}
+.main-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.main-content h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.main-img {
+  display: flex;
+  justify-content: end;
+}
+#main-img {
+  width: 80%;
+  height: 80%;
+}
+@media screen and (max-width: 786px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 90vh;
+  }
+  .main-content {
+    padding: 0 20px;
+  }
+  .main-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .main-img {
+    display: flex;
+    justify-content: start;
+  }
+  .nav-colored {
+    display: none;
+  }
+}
+
+/* Subjects section CSS */
+.subjects-section {
+  background-color: #eaeaea;
+}
+.subjects-conatiner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.subjects-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  border-left: 8px solid var(--light-blue);
+}
+.subjects-heading h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.subjects-heading a {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-size: larger;
+}
+.subject {
+  background-color: var(--white);
+  margin: 0 20px;
+  width: 260px;
+  height: 290px;
+}
+.subject-heading button {
+  border-radius: 100%;
+  display: flex;
+  height: 55px;
+  width: 55px;
+  margin: 0 10px;
+}
+.subject-heading h1 {
+  font-size: 2rem;
+}
+.subject-heading button i {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1px;
+}
+.subject-btns {
+  padding-top: 30px;
+  margin: 0 10px;
+}
+.subject-heading button h1 {
+  margin: 5px 30px;
+  font-size: 2rem;
+  text-align: center;
+}
+.subject-btns a {
+  text-decoration: none;
+  color: var(--white);
+}
+.subject-btns a:hover {
+  color: white;
+}
+.subject-btns button {
+  display: flex;
+  margin: 10px;
+  width: 200px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
+}
+.subject-btns i {
+  margin: 5px 10px;
+}
+#math .subject-heading button,
+#chemistry .subject-heading button {
+  background-color: var(--blue);
+}
+#math .subject-btns button,
+#chemistry .subject-btns button {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+#math .subject-btns button:hover,
+#chemistry .subject-btns button :hover {
+  background-color: var(--blue);
+}
+#compSci .subject-heading button i {
+  margin: 0 -5px;
+}
+#physics .subject-heading button i {
+  margin: 0 -4px;
+}
+#physics .subject-heading button,
+#compSci .subject-heading button {
+  background-color: var(--red);
+}
+
+#physics .subject-btns button,
+#compSci .subject-btns button {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+#physics .subject-btns button:hover,
+#compSci .subject-btns button:hover {
+  background-color: var(--blue);
+}
+
+#english .subject-heading button {
+  background-color: var(--purple);
+}
+
+#english .subject-btns button {
+  background-color: var(--purple);
+  border-color: var(--purple);
+}
+#english .subject-btns button:hover {
+  background-color: var(--blue);
+}
+
+#biology .subject-heading button {
+  background-color: var(--green);
+}
+#biology .subject-btns button {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+#biology .subject-btns button:hover {
+  background-color: var(--blue);
+}
+
+/* Footer Section */
+.footer-container {
+  background-color: var(--white);
+  height: 50vh;
+  margin: 0 auto;
+  padding: 60px 0;
+  color: var(--black);
+}
+.footer-texts {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-text {
+  text-align: center;
+}
+.footer-logo {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 30px;
+}
+.footer-text ul {
+  list-style: none;
+}
+.footer-text ul a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: var(--light-blue);
+}
+.footer-imgs {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  padding: 15px 60px;
+}
+.footer-imgs img {
+  width: 250px;
+  height: 150px;
+}
