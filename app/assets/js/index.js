@@ -3,6 +3,8 @@ const mobileMenu = document.querySelector("#mobile-navbar")
 const navBar = document.querySelector(".navBar");
 const logo = document.querySelector(".logo")
 const navbarItema = document.querySelectorAll(".navbar-item")
+const addDocumentBtn = document.querySelector(".add-document-btn")
+const addDocument = document.querySelector(".add-document-container")
 
 mobileMenu.addEventListener("click", ()=> {
     navbarMenu.classList.toggle("active")
@@ -33,3 +35,7 @@ window.onscroll = function () {
         })
     }
 };
+
+addDocumentBtn.addEventListener("click", ()=>{
+    addDocument.classList.toggle("hidden")
+})
